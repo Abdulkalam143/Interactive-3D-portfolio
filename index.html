@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaik Abdul Kalam | Frontend Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cur"></div>
+<div id="ring"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="lr"></div>
+  <p class="lt">LOADING PORTFOLIO</p>
+</div>
+
+<!-- Background Canvas -->
+<canvas id="cv"></canvas>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="logo">AK.DEV</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="tbtn" id="tt">🌙</div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="h-badge">
+    <div class="h-dot"></div>&nbsp;AVAILABLE FOR OPPORTUNITIES
+  </div>
+  <h1 class="h-name">Shaik Abdul Kalam</h1>
+  <p class="h-role">Frontend Developer &nbsp;·&nbsp; <span>HTML · CSS · JS · React</span></p>
+  <p class="h-desc">
+    Building modern, responsive, and user-friendly web experiences.
+    Passionate about clean design, performance, and turning ideas into real-world products.
+  </p>
+  <div class="h-cta">
+    <button class="btn-p" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+    <button class="btn-o" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <div class="scroll-txt">SCROLL</div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<div class="sec" id="about">
+  <p class="s-label reveal">// 01. About</p>
+  <h2 class="s-title reveal">Who Am I</h2>
+  <div class="ag reveal">
+    <div class="a-wrap" id="tilt">
+      <div class="a-av gc" style="padding:24px 0 28px;">
+        <div>👨‍💻</div>
+        <div class="a-name">SHAIK ABDUL KALAM</div>
+      </div>
+    </div>
+    <div class="gc">
+      <div class="bio">
+        <!-- FIX: Changed "B.Tech student" → "B.Tech graduate" -->
+        <p>I'm a passionate <strong>B.Tech graduate</strong> and aspiring <strong>Frontend Developer</strong> with a strong interest in building modern, responsive, and user-friendly web applications.</p>
+        <p>I enjoy turning ideas into real-world projects using <strong>HTML, CSS, JavaScript, and React</strong> — focusing on clean design and performance.</p>
+        <p>Completed industry-level virtual internships from <em>Goldman Sachs</em> and <em>Deloitte</em>, gaining exposure to real-world problem solving and professional workflows.</p>
+        <p>Currently on <strong>#100DaysOfCode</strong> — started January 2026, building and shipping projects every day.</p>
+      </div>
+      <div class="badges">
+        <span class="badge">🏦 Goldman Sachs</span>
+        <span class="badge">🔷 Deloitte</span>
+        <span class="badge">💻 #100DaysOfCode</span>
+      </div>
+      <div class="stats">
+        <div><div class="stn">4+</div><div class="stl">Skills</div></div>
+        <div><div class="stn">5+</div><div class="stl">Projects</div></div>
+        <div><div class="stn">2</div><div class="stl">Internships</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SKILLS ── -->
+<div class="sec" id="skills">
+  <p class="s-label reveal">// 02. Skills</p>
+  <h2 class="s-title reveal">Tech Stack</h2>
+  <div class="sg reveal">
+    <div class="sk"><div class="si">🌐</div><div class="sn">HTML5</div></div>
+    <div class="sk"><div class="si">🎨</div><div class="sn">CSS3</div></div>
+    <div class="sk"><div class="si">⚡</div><div class="sn">JavaScript</div></div>
+    <div class="sk"><div class="si">⚛️</div><div class="sn">React</div></div>
+    <div class="sk"><div class="si">📱</div><div class="sn">Responsive</div></div>
+    <div class="sk"><div class="si">🔀</div><div class="sn">Git & GitHub</div></div>
+    <div class="sk"><div class="si">🎯</div><div class="sn">UI Design</div></div>
+    <div class="sk"><div class="si">🚀</div><div class="sn">Performance</div></div>
+  </div>
+</div>
+
+<!-- ── PROJECTS ── -->
+<div class="sec" id="projects">
+  <p class="s-label reveal">// 03. Projects</p>
+  <h2 class="s-title reveal">Featured Work</h2>
+  <div class="pg">
+
+    <div class="pc reveal">
+      <div class="pb" style="background:linear-gradient(135deg,#041a0a,#0a3318);">🎵</div>
+      <div class="pbd">
+        <div class="pt">Spotify Clone UI</div>
+        <div class="pdesc">Pixel-perfect Spotify UI clone with music player layout, playlist browsing, sidebar navigation, and fully responsive design.</div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="btn-s" href="https://github.com/Abdulkalam143/Spotify-Clone-UI" target="_blank">View Code →</a>
+      </div>
+    </div>
+
+    <div class="pc reveal r2">
+      <div class="pb" style="background:linear-gradient(135deg,#1a0505,#350a0a);">▶️</div>
+      <div class="pbd">
+        <div class="pt">ViewTube — YouTube Clone</div>
+        <div class="pdesc">YouTube-inspired video platform UI with video cards, sidebar, search bar and clean responsive layout mimicking real streaming apps.</div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="btn-s" href="https://github.com/Abdulkalam143/Youtube-Clone-ViewTube" target="_blank">View Code →</a>
+      </div>
+    </div>
+
+    <!-- FIX: Correct ShopNova GitHub link -->
+    <div class="pc reveal r3">
+      <div class="pb" style="background:linear-gradient(135deg,#0d1b2a,#1a1040);">🛒</div>
+      <div class="pbd">
+        <div class="pt">ShopNova</div>
+        <div class="pdesc">Amazon-inspired e-commerce UI with dark mode, cart persistence, coupon codes, skeleton loading, and category filters — all in vanilla JS.</div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span>
+        </div>
+        <a class="btn-s" href="https://github.com/Abdulkalam143/ShopNova" target="_blank">View Code →</a>
+      </div>
+    </div>
+
+    <div class="pc reveal">
+      <div class="pb" style="background:linear-gradient(135deg,#1a0a10,#2e0a18);">🍕</div>
+      <div class="pbd">
+        <div class="pt">Welcome Foodie</div>
+        <div class="pdesc">Modern food UI website with clean design and fully responsive layout. Focused on visual appeal and great user experience.</div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="btn-s" href="https://github.com/Abdulkalam143/Welcome-Foodie" target="_blank">View Code →</a>
+      </div>
+    </div>
+
+    <div class="pc reveal r2">
+      <div class="pb" style="background:linear-gradient(135deg,#0a1a2e,#0a2a4a);">✅</div>
+      <div class="pbd">
+        <div class="pt">To-Do App</div>
+        <div class="pdesc">Clean, intuitive task manager with a polished UI. Create, manage and track your daily tasks with a smooth and responsive interface.</div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="btn-s" href="https://github.com/Abdulkalam143/To-Do-List-App" target="_blank">View Code →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── JOURNEY / TIMELINE ── -->
+<div class="sec" id="experience">
+  <p class="s-label reveal">// 04. Journey</p>
+  <h2 class="s-title reveal">Experience & Learning</h2>
+  <div class="tl">
+    <div class="ti">
+      <div class="td"></div>
+      <div class="ty">JAN 2026 — PRESENT</div>
+      <div class="tr">#100DaysOfCode Challenge</div>
+      <div class="to">GitHub · LinkedIn · Self-Directed</div>
+      <div class="tdc">Started the coding journey in January 2026 — building and shipping real projects every day, sharing progress publicly, and actively targeting frontend developer roles.</div>
+    </div>
+    <div class="ti">
+      <div class="td"></div>
+      <div class="ty">2026</div>
+      <div class="tr">UI Clone Projects</div>
+      <div class="to">Spotify Clone · ViewTube · ShopNova</div>
+      <div class="tdc">Built pixel-perfect UI clones of Spotify and YouTube (ViewTube), plus a full e-commerce UI — each focused on responsive layouts and real-world design patterns.</div>
+    </div>
+    <div class="ti">
+      <div class="td"></div>
+      <div class="ty">JAN 2026</div>
+      <div class="tr">First Projects</div>
+      <div class="to">HTML · CSS · JavaScript</div>
+      <div class="tdc">Kicked off with a To-Do App and Welcome Foodie — mastering core web technologies, responsive design, and clean UI principles from day one.</div>
+    </div>
+    <div class="ti">
+      <div class="td"></div>
+      <div class="ty">PRE-2026</div>
+      <div class="tr">Virtual Internships & B.Tech</div>
+      <div class="to">Goldman Sachs · Deloitte · B.Tech Graduate</div>
+      <div class="tdc">Completed B.Tech degree and industry-level virtual internships from Goldman Sachs and Deloitte — gaining exposure to real-world problem solving before diving into code.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONTACT ── -->
+<div class="sec" id="contact">
+  <p class="s-label reveal">// 05. Contact</p>
+  <h2 class="s-title reveal">Let's Connect</h2>
+  <div class="cg reveal">
+    <div class="gc cf">
+      <div class="iw">
+        <label>Name</label>
+        <input type="text" placeholder="Your name">
+      </div>
+      <div class="iw">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="iw">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Feel free to reach out for collaborations, internships, or just a friendly chat 👋"></textarea>
+      </div>
+      <button class="btn-p" style="align-self:flex-start;">Send Message →</button>
+    </div>
+    <div class="ci">
+      <div class="gc">
+        <h3>Open to Opportunities</h3>
+        <p>Looking for <strong style="color:var(--blue)">frontend developer</strong> roles — internships, full-time, or freelance. Happy to collaborate on interesting projects!</p>
+        <p>📧 <a href="mailto:skakwork@gmail.com">skakwork@gmail.com</a></p>
+        <p>📍 Hyderabad, India · Open to Remote</p>
+        <div class="socials">
+          <a class="soc" href="https://github.com/Abdulkalam143" target="_blank">
+            <span>🐙</span> GitHub
+          </a>
+          <a class="soc" href="https://www.linkedin.com/in/abdul-kalam-shaik-9ba926372/" target="_blank">
+            <span>💼</span> LinkedIn
+          </a>
+          <a class="soc" href="mailto:skakwork@gmail.com">
+            <span>📧</span> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Designed & Built by <strong>Shaik Abdul Kalam</strong> · Frontend Developer · © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
